@@ -27,7 +27,6 @@ app.post("/ws-integration", (req, res) => {
 
   console.log("room", room);
   console.log("message", message);
-  console.log("entrei");
 
   socket.emit("fancy-message-name", { room, message });
 
