@@ -1,0 +1,23 @@
+{
+  "name": "websocket-example",
+  "version": "1.0.0",
+  "description": "Example of a multi-component architecture with WebSocket integration",
+  "main": "index.js",
+  "scripts": {
+    "start-backend": "node backend.js",
+    "start-ws-server": "node ws-server.js",
+    "start-frontend-1": "cd frontend-1 && npm start",
+    "start-frontend-2": "cd frontend-2 && npm start",
+    "start-all": "concurrently \"npm run start-backend\" \"npm run start-ws-server\" \"npm run start-frontend-1\" \"npm run start-frontend-2\""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
