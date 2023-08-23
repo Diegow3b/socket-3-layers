@@ -6,9 +6,7 @@
   "scripts": {
     "start-backend": "node backend.js",
     "start-ws-server": "node ws-server.js",
-    "start-frontend-1": "cd frontend-1 && npm start",
-    "start-frontend-2": "cd frontend-2 && npm start",
-    "start-all": "concurrently \"npm run start-backend\" \"npm run start-ws-server\" \"npm run start-frontend-1\" \"npm run start-frontend-2\""
+    "start-all": "concurrently \"npm run start-backend\" \"npm run start-ws-server\""
   },
   "dependencies": {
     "body-parser": "^1.19.0",
